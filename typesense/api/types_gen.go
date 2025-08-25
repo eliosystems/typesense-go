@@ -419,6 +419,9 @@ type Field struct {
 
 	// VecDist The distance metric to be used for vector search. Default: `cosine`. You can also use `ip` for inner product.
 	VecDist *string `json:"vec_dist,omitempty"`
+
+	// AsyncReference You can use the async_reference option when creating reference fields. This allows documents to be indexed successfully even when the referenced document doesn't exist yet.
+	AsyncReference *bool `json:"async_reference,omitempty"`
 }
 
 // HealthStatus defines model for HealthStatus.
