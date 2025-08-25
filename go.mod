@@ -1,4 +1,4 @@
-module github.com/typesense/typesense-go/v3
+module github.com/eliosystems/typesense-go/v3
 
 go 1.22
 
